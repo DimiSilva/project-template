@@ -10,15 +10,4 @@
     "skipLibCheck": true
   },
   "exclude": ["./**/tests/**", "./**/dist/**"]
-  // "references": [
-  //   {
-  //     "path": "./node-template-api"
-  //   },
-  //   {
-  //     "path": "./node-template-application-common"
-  //   },
-  //   {
-  //     "path": "./node-template-backend-common"
-  //   }
-  // ]
 }

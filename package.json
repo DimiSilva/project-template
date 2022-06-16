@@ -1,10 +1,10 @@
 {
-  "name": "node-template",
+  "name": "project-template",
   "packageManager": "yarn@3.2.1",
   "private": true,
   "workspaces": [
-    "node-template-api",
-    "node-template-application-common",
-    "node-template-backend-common"
+    "api",
+    "common",
+    "backend-common"
   ]
 }

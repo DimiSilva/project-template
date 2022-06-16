@@ -486,6 +486,36 @@ __metadata:
   languageName: node
   linkType: hard
 
+"api@workspace:api":
+  version: 0.0.0-use.local
+  resolution: "api@workspace:api"
+  dependencies:
+    "@types/cors": ^2.8.12
+    "@types/express": ^4.17.13
+    "@types/jsonwebtoken": ^8.5.8
+    "@types/lodash": ^4.14.182
+    "@types/morgan": ^1.9.3
+    "@types/node": ^17.0.43
+    backend-common: "workspace:*"
+    bcrypt: ^5.0.1
+    common: "workspace:*"
+    concurrently: ^7.2.2
+    cors: ^2.8.5
+    dotenv: ^16.0.1
+    eslint: ^8.17.0
+    eslint-config-airbnb-base: ^15.0.0
+    eslint-plugin-import: ^2.24.2
+    express: ^4.17.1
+    express-async-handler: ^1.1.4
+    fastest-validator: ^1.11.1
+    jsonwebtoken: ^8.5.1
+    lodash: ^4.17.21
+    mongoose: ^6.0.4
+    morgan: ^1.10.0
+    nodemon: ^2.0.16
+  languageName: unknown
+  linkType: soft
+
 "aproba@npm:^1.0.3 || ^2.0.0":
   version: 2.0.0
   resolution: "aproba@npm:2.0.0"
@@ -567,6 +597,28 @@ __metadata:
   checksum: 876231688c66400473ba505731df37ea436e574dd524520294cc3bbc54ea40334865e01fa0d074d74d036ee874ee7e62f486ea38bc421ee8e6a871c06f011766
   languageName: node
   linkType: hard
+
+"backend-common@workspace:*, backend-common@workspace:backend-common":
+  version: 0.0.0-use.local
+  resolution: "backend-common@workspace:backend-common"
+  dependencies:
+    "@types/express": ^4.17.13
+    "@types/jsonwebtoken": ^8.5.8
+    "@types/lodash": ^4.14.182
+    amqplib: ^0.10.0
+    common: "workspace:*"
+    eslint: ^8.17.0
+    eslint-config-airbnb-base: ^15.0.0
+    eslint-plugin-import: ^2.24.2
+    express: ^4.18.1
+    express-async-handler: ^1.2.0
+    fastest-validator: ^1.12.0
+    jsonwebtoken: ^8.5.1
+    lodash: ^4.17.21
+    mongoose: ^6.0.8
+    typescript: ^4.7.3
+  languageName: unknown
+  linkType: soft
 
 "balanced-match@npm:^1.0.0":
   version: 1.0.2
@@ -916,6 +968,17 @@ __metadata:
   checksum: 9b7356817670b9a13a26ca5af1c21615463b500783b739b7634a0c2047c16cef4b2865d7576875c31c3cddf9dd621fa19285e628f20198b233a5cfdda6d0793b
   languageName: node
   linkType: hard
+
+"common@workspace:*, common@workspace:common":
+  version: 0.0.0-use.local
+  resolution: "common@workspace:common"
+  dependencies:
+    eslint: ^7.32.0
+    eslint-config-airbnb-base: ^14.2.1
+    eslint-plugin-import: ^2.24.2
+    typescript: ^4.4.3
+  languageName: unknown
+  linkType: soft
 
 "concat-map@npm:0.0.1":
   version: 0.0.1
@@ -3121,75 +3184,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-template-api@workspace:node-template-api":
-  version: 0.0.0-use.local
-  resolution: "node-template-api@workspace:node-template-api"
-  dependencies:
-    "@types/cors": ^2.8.12
-    "@types/express": ^4.17.13
-    "@types/jsonwebtoken": ^8.5.8
-    "@types/lodash": ^4.14.182
-    "@types/morgan": ^1.9.3
-    "@types/node": ^17.0.43
-    bcrypt: ^5.0.1
-    concurrently: ^7.2.2
-    cors: ^2.8.5
-    dotenv: ^16.0.1
-    eslint: ^8.17.0
-    eslint-config-airbnb-base: ^15.0.0
-    eslint-plugin-import: ^2.24.2
-    express: ^4.17.1
-    express-async-handler: ^1.1.4
-    fastest-validator: ^1.11.1
-    jsonwebtoken: ^8.5.1
-    lodash: ^4.17.21
-    mongoose: ^6.0.4
-    morgan: ^1.10.0
-    node-template-application-common: "workspace:*"
-    node-template-backend-common: "workspace:*"
-    nodemon: ^2.0.16
-  languageName: unknown
-  linkType: soft
-
-"node-template-application-common@workspace:*, node-template-application-common@workspace:node-template-application-common":
-  version: 0.0.0-use.local
-  resolution: "node-template-application-common@workspace:node-template-application-common"
-  dependencies:
-    eslint: ^7.32.0
-    eslint-config-airbnb-base: ^14.2.1
-    eslint-plugin-import: ^2.24.2
-    typescript: ^4.4.3
-  languageName: unknown
-  linkType: soft
-
-"node-template-backend-common@workspace:*, node-template-backend-common@workspace:node-template-backend-common":
-  version: 0.0.0-use.local
-  resolution: "node-template-backend-common@workspace:node-template-backend-common"
-  dependencies:
-    "@types/express": ^4.17.13
-    "@types/jsonwebtoken": ^8.5.8
-    "@types/lodash": ^4.14.182
-    amqplib: ^0.10.0
-    eslint: ^8.17.0
-    eslint-config-airbnb-base: ^15.0.0
-    eslint-plugin-import: ^2.24.2
-    express: ^4.18.1
-    express-async-handler: ^1.2.0
-    fastest-validator: ^1.12.0
-    jsonwebtoken: ^8.5.1
-    lodash: ^4.17.21
-    mongoose: ^6.0.8
-    node-template-application-common: "workspace:*"
-    typescript: ^4.7.3
-  languageName: unknown
-  linkType: soft
-
-"node-template@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "node-template@workspace:."
-  languageName: unknown
-  linkType: soft
-
 "nodemon@npm:^2.0.16":
   version: 2.0.16
   resolution: "nodemon@npm:2.0.16"
@@ -3504,6 +3498,12 @@ __metadata:
   checksum: f67403fe7b34912148d9252cb7481266a354bd99ce82c835f79070643bb3c6583d10dbcfda4d41e04bbc1d8437e9af0fb1e1f2135727878f5308682a579429b7
   languageName: node
   linkType: hard
+
+"project-template@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "project-template@workspace:."
+  languageName: unknown
+  linkType: soft
 
 "promise-inflight@npm:^1.0.1":
   version: 1.0.1
