@@ -1,0 +1,29 @@
+version: "3.8"
+services:
+  node-template-api:
+    container_name: node-template-api
+    hostname: node-template-api
+    build:
+      context: ./node-template-api
+      dockerfile: Dockerfile
+    ports:
+      - ${PORT}:${PORT}
+    volumes:
+      - ./node-template-api/:/usr/src/app/
+      - /usr/src/app/node_modules
+    restart: unless-stopped
+    environment:
+      PORT: ${PORT}
+      MONGO_CONNECTION_URL: "${MONGO_CONNECTION_URL}"
+      PASSWORD_HASH_SALT_ROUNDS: ${PASSWORD_HASH_SALT_ROUNDS}
+      AUTHENTICATION_SECRET: "${AUTHENTICATION_SECRET}"
+      MESSAGING_SERVICE_CONNECTION_URL: "${MESSAGING_SERVICE_CONNECTION_URL}"
+    networks:
+      - node-template
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+networks:
+  node-template:
+    name: "node-template"
+    driver: bridge

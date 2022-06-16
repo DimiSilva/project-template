@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["es2017"],
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "exclude": ["./**/tests/**", "./**/dist/**"]
+  // "references": [
+  //   {
+  //     "path": "./node-template-api"
+  //   },
+  //   {
+  //     "path": "./node-template-application-common"
+  //   },
+  //   {
+  //     "path": "./node-template-backend-common"
+  //   }
+  // ]
+}
