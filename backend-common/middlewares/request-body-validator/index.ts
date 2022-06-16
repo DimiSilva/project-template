@@ -2,7 +2,7 @@ import { NextFunction, Request, Response } from "express";
 import { AsyncCheckFunction, SyncCheckFunction } from "fastest-validator";
 
 import asyncHandler from "express-async-handler";
-import { InvalidOperationException } from "node-template-application-common/utils/exceptions";
+import { InvalidOperationException } from "common/utils/exceptions";
 
 const requestBodyValidator = (
   validator: SyncCheckFunction | AsyncCheckFunction

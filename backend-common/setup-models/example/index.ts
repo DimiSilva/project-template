@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { enums } from "node-template-application-common";
+import { enums } from "common";
 
 export default ($mongoose = mongoose) => {
   const subSchema = new $mongoose.Schema(

@@ -4,7 +4,7 @@ import morgan from "morgan";
 
 import setupRoutes from "../routes";
 
-import { errorHandler } from "node-template-backend-common/middlewares";
+import { errorHandler } from "backend-common/middlewares";
 
 const setupExpress = (): Express => {
   const app = express();

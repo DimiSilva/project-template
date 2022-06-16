@@ -2,7 +2,7 @@ import { Express } from "express";
 
 import { exampleController } from "../../controllers";
 import * as validators from "./validators";
-import * as middlewares from "node-template-backend-common/middlewares";
+import * as middlewares from "backend-common/middlewares";
 
 const endpoint = "/example";
 

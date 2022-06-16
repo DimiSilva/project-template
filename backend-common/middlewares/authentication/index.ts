@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
-import { UnauthorizedException } from "node-template-application-common/utils/exceptions";
-import { errors as errorsEnum } from "node-template-application-common/enums";
+import { UnauthorizedException } from "common/utils/exceptions";
+import { errors as errorsEnum } from "common/enums";
 import expressAsyncHandler from "express-async-handler";
 import _ from "lodash";
 import { decode } from "jsonwebtoken";
