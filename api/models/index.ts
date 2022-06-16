@@ -1,4 +1,4 @@
 import mongoose from "mongoose";
-import backendCommon from "backend-common";
+import { setupModels } from "backend-common";
 
-export default backendCommon.setupModels(mongoose);
+export default setupModels(mongoose);

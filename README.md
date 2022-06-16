@@ -1,1 +1,1 @@
-# node-template
+# project-template

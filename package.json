@@ -2,6 +2,9 @@
   "name": "project-template",
   "packageManager": "yarn@3.2.1",
   "private": true,
+  "scripts": {
+    "api-dev": "yarn workspace api concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
+  },
   "workspaces": [
     "api",
     "common",

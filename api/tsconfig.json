@@ -12,10 +12,10 @@
   },
   "references": [
     {
-      "path": "../backend-common"
+      "path": "../common"
     },
     {
-      "path": "../common"
+      "path": "../backend-common"
     }
   ]
 }

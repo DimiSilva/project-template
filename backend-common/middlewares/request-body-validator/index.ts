@@ -2,7 +2,7 @@ import { NextFunction, Request, Response } from "express";
 import { AsyncCheckFunction, SyncCheckFunction } from "fastest-validator";
 
 import asyncHandler from "express-async-handler";
-import { InvalidOperationException } from "common/utils/exceptions";
+import { utils } from "common";
 
 const requestBodyValidator = (
   validator: SyncCheckFunction | AsyncCheckFunction
@@ -11,7 +11,10 @@ const requestBodyValidator = (
     req.body = { ...req.body, ...req.query, ...req.params };
     const validatorResult = await validator(req.body);
     if (validatorResult === true) next();
-    else throw new InvalidOperationException(JSON.stringify(validatorResult));
+    else
+      throw new utils.exceptions.InvalidOperation(
+        JSON.stringify(validatorResult)
+      );
   });
 
 export default requestBodyValidator;

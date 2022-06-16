@@ -7,7 +7,7 @@
     "lint": "eslint",
     "build": "npx tsc",
     "start": "node dist/index.js",
-    "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\""
+    "dev": "concurrently \"npx tsc --build --watch\" \"nodemon -q dist/index.js\""
   },
   "keywords": [],
   "author": "",

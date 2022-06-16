@@ -1,15 +1,15 @@
-import InvalidOperationException from "./invalid-operation";
-import NotFoundException from "./not-found";
-import ForbiddenException from "./forbidden";
-import ConflictException from "./conflict";
-import InternalException from "./internal";
-import UnauthorizedException from "./unauthorized";
+import InvalidOperation from "./invalid-operation";
+import NotFound from "./not-found";
+import Forbidden from "./forbidden";
+import Conflict from "./conflict";
+import Internal from "./internal";
+import Unauthorized from "./unauthorized";
 
 export {
-  InvalidOperationException,
-  NotFoundException,
-  ForbiddenException,
-  ConflictException,
-  InternalException,
-  UnauthorizedException,
+  InvalidOperation,
+  NotFound,
+  Forbidden,
+  Conflict,
+  Internal,
+  Unauthorized,
 };

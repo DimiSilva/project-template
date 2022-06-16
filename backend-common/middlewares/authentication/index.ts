@@ -1,6 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import { UnauthorizedException } from "common/utils/exceptions";
-import { errors as errorsEnum } from "common/enums";
+import { utils, enums } from "common";
 import expressAsyncHandler from "express-async-handler";
 import _ from "lodash";
 import { decode } from "jsonwebtoken";
@@ -12,12 +11,16 @@ const authentication = expressAsyncHandler(
       ""
     );
     if (!token)
-      throw new UnauthorizedException(errorsEnum.WITHOUT_AUTHORIZATION);
+      throw new utils.exceptions.Unauthorized(
+        enums.errors.WITHOUT_AUTHORIZATION
+      );
     try {
       const payload = decode(token);
       req.userPayload = payload;
     } catch (err) {
-      throw new UnauthorizedException(errorsEnum.WITHOUT_AUTHORIZATION);
+      throw new utils.exceptions.Unauthorized(
+        enums.errors.WITHOUT_AUTHORIZATION
+      );
     } finally {
       next();
     }
