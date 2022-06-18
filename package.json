@@ -10,6 +10,7 @@
   "workspaces": [
     "api",
     "common",
-    "backend-common"
+    "backend-common",
+    "app"
   ]
 }
