@@ -1,16 +1,7 @@
 {
   "name": "project-template",
-  "packageManager": "yarn@3.2.1",
   "private": true,
   "scripts": {
-    "api-dev": "yarn workspace api dev",
-    "api-build": "yarn workspace api build",
-    "api-start": "yarn workspace api start"
-  },
-  "workspaces": [
-    "api",
-    "common",
-    "backend-common",
-    "app"
-  ]
+    "setup": "./scripts/setup.sh"
+  }
 }

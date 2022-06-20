@@ -8,7 +8,7 @@ const get = async (req: Request, res: Response, next: NextFunction) => {
   const { search, page, perPage } = _.get(req, "body", {});
 
   const query = {
-    ...(search ? { text: { $regex: search, $options: "i" } } : {}),
+    ...(search ? { prop: { $regex: search, $options: "i" } } : {}),
   };
 
   const data = await models.Example.find(query)

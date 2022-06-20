@@ -13,9 +13,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "backend-common": "workspace:*",
+    "backend-common": "link:../backend-common",
     "bcrypt": "^5.0.1",
-    "common": "workspace:*",
+    "common": "link:../common",
     "cors": "^2.8.5",
     "dotenv": "^16.0.1",
     "express": "^4.17.1",
