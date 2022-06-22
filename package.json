@@ -2,6 +2,6 @@
   "name": "project-template",
   "private": true,
   "scripts": {
-    "setup": "./scripts/setup.sh"
+    "setup": "make setup"
   }
 }
