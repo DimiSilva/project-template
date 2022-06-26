@@ -1,10 +1,10 @@
 .dockerignore
-Dockerfile
+**/Dockerfile
 docker-compose.yml
 
 .git
 .gitignore
 
-node_modules
-.env
-dist
+**/node_modules
+**/.env
+**/dist
